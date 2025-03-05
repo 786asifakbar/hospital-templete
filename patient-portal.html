@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal - MediCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>MediCare</h1>
+        </div>
+        <nav class="nav-menu">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#departments">Departments</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="patient-portal.html" class="active">Patient Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Portal Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h2>Patient Portal</h2>
+            <p>Access Your Healthcare Information Securely</p>
+        </div>
+    </section>
+
+    <!-- Portal Login Section -->
+    <section class="portal-login">
+        <div class="login-container">
+            <div class="login-box">
+                <h3><i class="fas fa-user-circle"></i> Patient Login</h3>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+                <div class="portal-links">
+                    <p>New Patient? <a href="#register">Register Here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portal Features Section -->
+    <section class="portal-features">
+        <h2 class="section-title">Portal Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Appointments</h3>
+                <p>Schedule and manage your appointments online</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-file-medical"></i>
+                <h3>Medical Records</h3>
+                <p>Access your health records and test results</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-pills"></i>
+                <h3>Prescriptions</h3>
+                <p>Request prescription refills and view medication history</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-comments"></i>
+                <h3>Messaging</h3>
+                <p>Communicate securely with your healthcare team</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portal Security Section -->
+    <section class="portal-security">
+        <div class="security-content">
+            <h2 class="section-title">Your Security is Our Priority</h2>
+            <div class="security-features">
+                <div class="security-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Encrypted Data</h3>
+                    <p>All your information is protected with industry-standard encryption</p>
+                </div>
+                <div class="security-item">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Access</h3>
+                    <p>Multi-factor authentication to ensure your account's safety</p>
+                </div>
+                <div class="security-item">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Privacy Compliance</h3>
+                    <p>Fully compliant with HIPAA regulations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Support</h3>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> support@medicare.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Portal Hours</h3>
+                <p>Available 24/7</p>
+                <p>Technical Support: Mon-Fri 8AM-8PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MediCare Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
