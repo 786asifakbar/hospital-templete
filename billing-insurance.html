@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing & Insurance - MediCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>MediCare</h1>
+        </div>
+        <nav class="nav-menu">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#departments">Departments</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="billing-insurance.html" class="active">Billing & Insurance</a></li>
+                <li><a href="medical-records.html">Medical Records</a></li>
+                <li><a href="patient-services.html">Patient Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h2>Billing & Insurance</h2>
+            <p>Financial Services and Insurance Support for Our Patients</p>
+        </div>
+    </section>
+
+    <!-- Billing & Insurance Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="info-card">
+                <h3><i class="fas fa-file-invoice-dollar"></i> Insurance Coverage</h3>
+                <p>We accept most major insurance plans and are committed to helping you understand your coverage.</p>
+                <ul class="feature-list">
+                    <li>Verification of insurance benefits</li>
+                    <li>Pre-authorization assistance</li>
+                    <li>Coverage explanation</li>
+                    <li>Network participation information</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3><i class="fas fa-calculator"></i> Payment Options</h3>
+                <p>We offer various payment options to make healthcare accessible to all our patients.</p>
+                <ul class="feature-list">
+                    <li>Online bill pay</li>
+                    <li>Payment plans</li>
+                    <li>Financial assistance programs</li>
+                    <li>Credit card payments</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3><i class="fas fa-hands-helping"></i> Financial Counseling</h3>
+                <p>Our financial counselors are here to help you navigate billing and insurance matters.</p>
+                <ul class="feature-list">
+                    <li>Cost estimates</li>
+                    <li>Payment arrangement assistance</li>
+                    <li>Insurance claim support</li>
+                    <li>Financial assistance applications</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <h3>Insurance Verification Request</h3>
+            <form class="contact-form" id="insuranceForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="insurance" name="insurance" required placeholder="Insurance Provider">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="policy" name="policy" required placeholder="Policy Number">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Additional Information"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> billing@medicare.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p>Saturday: 9:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

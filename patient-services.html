@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Services - MediCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>MediCare</h1>
+        </div>
+        <nav class="nav-menu">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#departments">Departments</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="billing-insurance.html">Billing & Insurance</a></li>
+                <li><a href="medical-records.html">Medical Records</a></li>
+                <li><a href="patient-services.html" class="active">Patient Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h2>Patient Services</h2>
+            <p>Comprehensive Support for Your Healthcare Journey</p>
+        </div>
+    </section>
+
+    <!-- Patient Services Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="info-card">
+                <h3><i class="fas fa-calendar-alt"></i> Appointment Scheduling</h3>
+                <p>Schedule your appointments easily through our online system or by phone.</p>
+                <ul class="feature-list">
+                    <li>Online appointment booking</li>
+                    <li>Same-day appointments available</li>
+                    <li>Specialist referrals</li>
+                    <li>Appointment reminders</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3><i class="fas fa-user-md"></i> Patient Support</h3>
+                <p>Access comprehensive support services for all your healthcare needs.</p>
+                <ul class="feature-list">
+                    <li>Care coordination</li>
+                    <li>Patient education</li>
+                    <li>Translation services</li>
+                    <li>Transportation assistance</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3><i class="fas fa-info-circle"></i> General Information</h3>
+                <p>Find answers to common questions and access important resources.</p>
+                <ul class="feature-list">
+                    <li>Hospital policies</li>
+                    <li>Visitor guidelines</li>
+                    <li>Patient rights</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Request Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <h3>Schedule an Appointment</h3>
+            <form class="contact-form" id="appointmentForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="dental">Dental Clinic</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="preferredDate" name="preferredDate" required>
+                    <label for="preferredDate">Preferred Date</label>
+                </div>
+                <div class="form-group">
+                    <select id="preferredTime" name="preferredTime" required>
+                        <option value="">Preferred Time</option>
+                        <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                        <option value="afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
+                        <option value="evening">Evening (5:00 PM - 7:00 PM)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="reason" name="reason" required placeholder="Reason for Visit"></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newPatient" name="newPatient">
+                    <label for="newPatient">I am a new patient</label>
+                </div>
+                <button type="submit" class="btn-primary">Schedule Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> appointments@medicare.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
+                    <p>Saturday: 9:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
