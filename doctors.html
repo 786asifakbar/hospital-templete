@@ -6,6 +6,7 @@
     <title>Our Doctors - MediCare Hospital</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/relationships.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -42,8 +43,16 @@
             <h3>Dr. Sarah Johnson</h3>
             <p class="specialty">Cardiology</p>
             <p class="credentials">MD, FACC</p>
-            <p class="description">Specializing in advanced cardiac care with over 15 years of experience.</p>
+            <p class="description">Specializing in advanced cardiac care, heart surgery, and cardiac rehabilitation with over 15 years of experience.</p>
+            <div class="related-services">
+                <h4>Related Services:</h4>
+                <ul class="services-list"></ul>
+            </div>
             <a href="#appointment" class="btn-secondary">Book Appointment</a>
+            <script>
+                document.currentScript.parentElement.querySelector('.services-list').innerHTML = 
+                    getDoctorServices('Dr. Sarah Johnson').map(service => `<li>${service}</li>`).join('');
+            </script>
         </div>
 
         <div class="doctor-card">
@@ -51,25 +60,118 @@
             <h3>Dr. Michael Chen</h3>
             <p class="specialty">Neurology</p>
             <p class="credentials">MD, PhD</p>
-            <p class="description">Expert in neurological disorders and innovative treatment approaches.</p>
+            <p class="description">Expert in neurological disorders, stroke treatment, and innovative brain mapping approaches.</p>
+            <div class="related-services">
+                <h4>Related Services:</h4>
+                <ul class="services-list"></ul>
+            </div>
             <a href="#appointment" class="btn-secondary">Book Appointment</a>
+            <script>
+                document.currentScript.parentElement.querySelector('.services-list').innerHTML = 
+                    getDoctorServices('Dr. Michael Chen').map(service => `<li>${service}</li>`).join('');
+            </script>
         </div>
 
         <div class="doctor-card">
-            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.0&auto=format&fit=crop&w=600&q=80" alt="Dr. Emily Rodriguez">
-            <h3>Dr. Emily Rodriguez</h3>
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.0&auto=format&fit=crop&w=600&q=80" alt="Dr. Lisa Thompson">
+            <h3>Dr. Lisa Thompson</h3>
+            <p class="specialty">Dermatology</p>
+            <p class="credentials">MD, FAAD</p>
+            <p class="description">Expert in medical and cosmetic dermatology, laser treatments, and skin cancer surgery.</p>
+            <div class="related-services">
+                <h4>Related Services:</h4>
+                <ul class="services-list"></ul>
+            </div>
+            <a href="#appointment" class="btn-secondary">Book Appointment</a>
+            <script>
+                document.currentScript.parentElement.querySelector('.services-list').innerHTML = 
+                    getDoctorServices('Dr. Lisa Thompson').map(service => `<li>${service}</li>`).join('');
+            </script>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.0&auto=format&fit=crop&w=600&q=80" alt="Dr. Robert Martinez">
+            <h3>Dr. Robert Martinez</h3>
+            <p class="specialty">Oncology</p>
+            <p class="credentials">MD, PhD</p>
+            <p class="description">Leading expert in cancer treatment, immunotherapy, and personalized chemotherapy protocols.</p>
+            <div class="related-services">
+                <h4>Related Services:</h4>
+                <ul class="services-list"></ul>
+            </div>
+            <a href="#appointment" class="btn-secondary">Book Appointment</a>
+            <script>
+                document.currentScript.parentElement.querySelector('.services-list').innerHTML = 
+                    getDoctorServices('Dr. Robert Martinez').map(service => `<li>${service}</li>`).join('');
+            </script>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.0&auto=format&fit=crop&w=600&q=80" alt="Dr. Amanda Lee">
+            <h3>Dr. Amanda Lee</h3>
+            <p class="specialty">Endocrinology</p>
+            <p class="credentials">MD, FACE</p>
+            <p class="description">Specialized in hormone disorders, diabetes management, and thyroid treatments.</p>
+            <div class="related-services">
+                <h4>Related Services:</h4>
+                <ul class="services-list"></ul>
+            </div>
+            <a href="#appointment" class="btn-secondary">Book Appointment</a>
+            <script>
+                document.currentScript.parentElement.querySelector('.services-list').innerHTML = 
+                    getDoctorServices('Dr. Amanda Lee').map(service => `<li>${service}</li>`).join('');
+            </script>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.0&auto=format&fit=crop&w=600&q=80" alt="Dr. David Kim">
+            <h3>Dr. David Kim</h3>
+            <p class="specialty">Psychiatry</p>
+            <p class="credentials">MD, FAPA</p>
+            <p class="description">Experienced in anxiety, depression treatment, and cognitive behavioral therapy.</p>
+            <div class="related-services">
+                <h4>Related Services:</h4>
+                <ul class="services-list"></ul>
+            </div>
+            <a href="#appointment" class="btn-secondary">Book Appointment</a>
+            <script>
+                document.currentScript.parentElement.querySelector('.services-list').innerHTML = 
+                    getDoctorServices('Dr. David Kim').map(service => `<li>${service}</li>`).join('');
+            </script>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.0&auto=format&fit=crop&w=600&q=80" alt="Dr. Emily Parker">
+            <h3>Dr. Emily Parker</h3>
             <p class="specialty">Pediatrics</p>
             <p class="credentials">MD, FAAP</p>
-            <p class="description">Dedicated to providing compassionate care for children of all ages.</p>
+            <p class="description">Dedicated to child healthcare, vaccinations, and developmental assessments.</p>
+            <div class="related-services">
+                <h4>Related Services:</h4>
+                <ul class="services-list"></ul>
+            </div>
+            <a href="#appointment" class="btn-secondary">Book Appointment</a>
+            <script>
+                document.currentScript.parentElement.querySelector('.services-list').innerHTML = 
+                    getDoctorServices('Dr. Emily Parker').map(service => `<li>${service}</li>`).join('');
+            </script>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.0&auto=format&fit=crop&w=600&q=80" alt="Dr. James Wilson">
+            <h3>Dr. James Wilson</h3>
+            <p class="specialty">Orthopedic Surgery</p>
+            <p class="credentials">MD, FAAOS</p>
+            <p class="description">Expert in joint replacement, sports medicine, and minimally invasive surgery.</p>
             <a href="#appointment" class="btn-secondary">Book Appointment</a>
         </div>
 
         <div class="doctor-card">
-            <img src="https://images.unsplash.com/photo-1622902046580-2b47f47f5471?ixlib=rb-4.0.0&auto=format&fit=crop&w=600&q=80" alt="Dr. James Wilson">
-            <h3>Dr. James Wilson</h3>
-            <p class="specialty">Orthopedics</p>
-            <p class="credentials">MD, FAAOS</p>
-            <p class="description">Specialized in joint replacement and sports medicine.</p>
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.0&auto=format&fit=crop&w=600&q=80" alt="Dr. Maria Rodriguez">
+            <h3>Dr. Maria Rodriguez</h3>
+            <p class="specialty">Gynecology</p>
+            <p class="credentials">MD, FACOG</p>
+            <p class="description">Specialized in women's health, prenatal care, and gynecological surgery.</p>
             <a href="#appointment" class="btn-secondary">Book Appointment</a>
         </div>
     </section>
